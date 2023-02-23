@@ -1,0 +1,18 @@
+node_modules
+*.log*
+.nuxt
+.nitro
+.cache
+.output
+.env
+dist
+
+# release packages
+*.zip
+*.gz
+*.tar
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

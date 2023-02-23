@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.0",
+    "nuxt": "^3.2.0"
+  },
+  "dependencies": {
+    "echarts": "^5.4.1",
+    "playwright": "^1.30.0"
+  }
+}
