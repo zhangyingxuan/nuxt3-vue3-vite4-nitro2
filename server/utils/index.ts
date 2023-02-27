@@ -2,8 +2,7 @@ import { BrowserInstance } from "./browserUtil";
 import { Page } from "playwright";
 // npx playwright codegen 
 
-export const openPage = async (url: string = "https://etax.sichuan.chinatax.gov.cn:5100/") => {
-  console.log('initTask')
+export const openPage = async (url: string) => {
   // const browser = await chromium.launch();
   // const browser = await await chromium.launch({
   //   headless: false,
@@ -21,7 +20,6 @@ export const openPage = async (url: string = "https://etax.sichuan.chinatax.gov.
 
 export const getDataFromPage = async (page: Page) => {
   const textContent = await page.locator('a').filter({ hasText: '增值税及附加税费申报（一般...' }).textContent();
-  console.log(textContent)
   return {
     textContent
   }

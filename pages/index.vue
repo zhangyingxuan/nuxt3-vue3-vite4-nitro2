@@ -2,10 +2,6 @@
   <div>首页</div>
   <chat title="chart" :names="[1, 2]" :score="[1, 2]" />
   <div>
-    <!-- <NuxtLayout /> -->
-    <!-- <NuxtWelcome /> -->
-    <NuxtLink to="/detail"> 详情页</NuxtLink>
-    <NuxtLink to="https://nuxtjs.org"> Nuxt website </NuxtLink>
     {{ state }}
     <span @click="clickStartTask">启动</span>
   </div>

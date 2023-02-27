@@ -5,8 +5,12 @@
 </template>
 
 <script setup>
+import "normalize.css/normalize.css";
+const layout = "default";
+const appConfig = useAppConfig();
+
 useHead({
-  title: "my nuxt3 test",
+  title: appConfig.title,
   meta: [
     { charset: "utf-8" },
     { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -14,3 +18,5 @@ useHead({
   link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
 });
 </script>
+
+<style></style>

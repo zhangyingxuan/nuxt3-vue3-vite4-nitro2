@@ -3,13 +3,12 @@ import { resolve } from 'pathe'
 
 export default defineNuxtConfig({
   alias: {
-    "@": resolve(__dirname, "./client"),
+    "@": resolve(__dirname, "./"),
     "@pages": resolve(__dirname, "./pages"),
     "@server": resolve(__dirname, "./server"),
     'images': resolve(__dirname, './assets/images'),
     'style': resolve(__dirname, './assets/style'),
   },
-  srcDir: 'client/',
   build: { transpile: ["echarts"] },
   // runtimeConfig：需要在使用环境变量构建后指定的私有或公共令牌。
   runtimeConfig: {
@@ -28,26 +27,25 @@ export default defineNuxtConfig({
   //       component: resolve(__dirname, 'pages/404.vue')
   //     })
   //   }
-  // },
+  // }
   // vite代理方式，nitro 代理都可以成功
-  // vite: {
+  // , vite: {
   //   server: {
   //     proxy: {
   //       '/api': {
-  //         target: 'http://127.0.0.1:3001/',
+  //         target: 'http://127.0.0.1:3000/',
   //         // rewrite: (path) => path.replace(/^\/api/, ''),
   //       }
   //     },
   //   }
-  // },
-  // nitro: {
+  // }
+  // , nitro: {
   //   devProxy: {
   //     "/api": {
-  //       target: 'http://127.0.0.1:9090/',
+  //       target: 'http://127.0.0.1:3000/',
   //       prependPath: true,
   //       changeOrigin: true,
   //     }
-
   //   }
   // }
 })
